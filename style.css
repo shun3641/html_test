@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+}
+
+.topGra {
+  background-image: url("portpholioTopimage.png");
+  padding: 25px;
+  filter: brightness(1) contrast(1.5);
+}
+.topimage {
+  display: inline-block;
+  width: 200px;
+  height: 110px;
+  background-image: url("imageChara.png");
+  background-size: 200px 110px;
+  background-repeat: no-repeat;
+}
+
+.title {
+    display: inline-block;
+    margin: 0;
+    font-size: 2.2rem;
+    color: white;
+    margin-left: 10px;
+    position: relative;
+    bottom: 30px;
+}
+
+.contents_wrapper {
+  padding: 10px 60px;
+}
+
+.gaiyou {
+  color: red;
+}
+.work {
+  width: 45%;
+  border: 3px solid blue;
+  border-radius: 15px;
+  padding: 20px;
+  color: rgb(75, 75, 75);
+  position: relative;
+  background-color: rgb(202, 230, 247);
+}
+
+.work_image {
+  width: 100%;
+  height: 450px;
+}
+
+.work p {
+  font-weight: 400;
+  font-size: 17px;
+  margin-top: 20px;
+  letter-spacing: 0.2px;
+}
+.used {
+  color: black;
+  font-weight: nomal;
+  font-size: 16px;
+}
+
+.jump_bottun {
+  position: absolute;
+  margin-top: 15px;
+  right: 20px;
+  width: 150px;
+  height: 150px;
+  font-size: 18px;
+  padding-bottom: 10px;
+  background-color: rgb(223, 40, 40);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jump_bottun a {
+  color: inherit;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+.jump_text {
+  position: absolute;
+  bottom: 10px;
+}
+
+.word {
+  font-weight: 500;
+}
+
+.sun {
+  display: inline-block;
+  margin-left: 20px;
+  width: 100px;
+  height: 100px;
+  transform-origin: center;
+  animation: roling 15s linear infinite;
+}
+
+
+@keyframes roling {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
