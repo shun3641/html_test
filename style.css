@@ -2,28 +2,56 @@ body {
   margin: 0;
 }
 
+header {
+  background-color: #C1CDF5;
+}
+
+.container {
+  overflow: hidden;
+}
+
 .topGra {
   background-image: url("portpholioTopimage.png");
   padding: 25px;
   filter: brightness(1) contrast(1.5);
 }
-.topimage {
-  display: inline-block;
-  width: 200px;
-  height: 110px;
-  background-image: url("imageChara.png");
+
+.topImage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-size: 200px 110px;
   background-repeat: no-repeat;
 }
 
+.topImage img {
+  height: 380px;
+}
+
+@media screen and (max-width: 767px) {
+  .topimage {
+    width: 150px;
+    height: 80px;
+    background-size: 150px 80px;
+  }
+
+}
+
+.name {
+  font-weight: 800;
+  font-size: 26px;
+  margin-left: 20px;
+  margin-top: 0;
+  padding-top: 15px;
+}
+
 .title {
-    display: inline-block;
-    margin: 0;
-    font-size: 2.2rem;
-    color: white;
-    margin-left: 10px;
-    position: relative;
-    bottom: 30px;
+  font-family: "sans-serif";
+  color: rgb(118, 168, 218);
+  -webkit-text-stroke: 1.5px rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 5rem;
+  margin-left: 50px;
 }
 
 .contents_wrapper {
@@ -33,27 +61,8 @@ body {
 .gaiyou {
   color: red;
 }
-.work {
-  width: 45%;
-  border: 3px solid blue;
-  border-radius: 15px;
-  padding: 20px;
-  color: rgb(75, 75, 75);
-  position: relative;
-  background-color: rgb(202, 230, 247);
-}
 
-.work_image {
-  width: 100%;
-  height: 450px;
-}
 
-.work p {
-  font-weight: 400;
-  font-size: 17px;
-  margin-top: 20px;
-  letter-spacing: 0.2px;
-}
 .used {
   color: black;
   font-weight: nomal;
@@ -116,5 +125,118 @@ h3 {
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+h2 {
+  margin-top: 0;
+  padding-top: 30px;
+  padding-left: 30px;
+  font-family: "Bungee", sans-serif;
+  font-weight: 200;
+  font-size: 40px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  padding-bottom: 10px;
+}
+
+#leftArm {
+  display: inline-block;
+  position: relative;
+  bottom: 5px;
+  margin-right: 2px;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  clip-path: polygon(0% 0%, 30% 0%, 30% 70%, 100% 70%, 100% 100%, 0% 100%);
+}
+
+.mainWrapper {
+  margin-left: 20px;
+  border-left: 3px solid black;
+}
+
+main {
+  padding-top: 30px;
+  background-color: #C1CDF5;
+}
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.work {
+  border: 2px solid #5CA4F5;
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  
+}
+
+.worksText {
+  font-family: "HGP創英角ﾎﾟｯﾌﾟ体";
+  font-weight: 800;
+  font-size: 18px;
+  padding-left: 10px;
+  color: white;
+}
+
+.category {
+  font-size: 20px;
+  padding-left: 10px;
+  color: white;
+  font-weight: 600;
+  font-family: "HGP創英角ﾎﾟｯﾌﾟ体";
+  border-bottom: 2px solid white;
+  padding-bottom: 8px;
+}
+
+.work_image {
+  text-align: center;
+}
+
+.work_image img {
+  width: 90%;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: 100% 100%;
+}
+
+img[src="amuse.png"] {
+  filter: contrast(130%), brightness(120%);
+}
+
+.workname {
+  padding-left: 10px;
+  font-weight: 500;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .topImage {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .topImage img {
+    width: 100%;
+    height: auto;
+  }
+
+  .topImage .title {
+    font-size: 2.5rem;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .work {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
