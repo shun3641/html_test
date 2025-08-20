@@ -173,7 +173,7 @@ main {
   background-color: black;
   border-radius: 20px;
   color: white;
-  
+  padding-bottom: 3px;
 }
 
 .worksText {
@@ -225,6 +225,14 @@ img[src="amuse.png"] {
   height: 400px;
   border-radius: 50%;
 }
+
+
+
+
+
+
+
+
 @media screen and (max-width: 767px) {
   .topImage {
     flex-direction: column;
