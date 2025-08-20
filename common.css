@@ -28,11 +28,12 @@ a {
   }
 }
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) { */
   .navSp {
     position: fixed;
     top: 0;
     left: 0;
+    padding-left: 70px;
     width: 100vw;
     height: 100vh;
     background: var(--primary-gray-gradation);
@@ -42,43 +43,54 @@ a {
     transform: translateY(-100vh);
     transition: 1s;
   }
-}
+/* } */
 
 .navList {
   display: flex;
   flex-direction: column;
-  font-size: 32px;
+  font-size: 2em;
   color: var(--primary-white2);
   font-family: "Bungee", sans-serif;
   font-weight: 200;
   font-style: normal;
   padding-top: 60px;
   gap: 30px;
+@media screen and (min-width: 767px) {
+    font-size: 3em;
+  }
+  
 }
+
 
 .navItem a {
   text-shadow: 1.2px 1.2px 1px var(--primary-black);
 }
 
 .nav_wrap {
-  display: none;
+  /* display: none; */
 }
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) { */
   .nav_wrap {
     display: block;
     position: fixed;
-    top: 15px;
-    right: 3%;
+    top: 2%;
+    right: 2%;
     z-index: 300;
   }
 
-}
+/* } */
 
 .navBtnTxt::after {
   content: "メニュー";
-  font-size: 15px;
-  color: var(--primary-black);
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  @media screen and (max-width: 767px) {
+    content: "メニュー";
+    font-size: 14px;
+    
+  }
 }
 
 .navBtnTxt.active::after {
@@ -91,12 +103,19 @@ a {
 
 .navBtn {
   z-index: 300;
-  width: 70px;
+  width: 150px;
+  height: 150px;
   text-align: center;
-  background-color: var(--primary-white2);
-  border: #1B1B1B 1px solid;
-  padding: 6px 12px;
+  background-color: #2a2a2a;
+  border: white 2.5px solid;
   border-radius: 100vw;
   cursor: pointer;
-  display: block
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3px;
+  @media screen {
+    width: 70px;
+    height: 70px;
+  }
 }
