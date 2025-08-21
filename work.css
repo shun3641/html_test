@@ -33,7 +33,12 @@ a[href="index.html"] {
 }
 
 .myImage {
-  width: 700px;
+  max-width: 700px;
+
+  @media screen and (max-width: 768px) {
+    width: 300px;
+
+  }
 }
 
 section {
@@ -42,6 +47,12 @@ section {
   justify-content: center;
   background-image: url("トップBg2.jpg");
   background-size: 100% 100%;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 20px;
+  }
 }
 
 section p {
@@ -59,10 +70,23 @@ section>p {
   align-self: center;
   position: relative;
   top: -40px;
+
+  @media screen and (max-width: 768px) {
+    position: relative;
+    top: -220px;
+    left: -20px;
+    height: auto;
+    align-self: start;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: left;
+
+  }
 }
+
 section div p {
   writing-mode: horizontal-tb;
-  width: 8em;
+  width: 9em;
   text-align: center;
   position: relative;
   left: 20px;
@@ -77,16 +101,29 @@ section ul {
   position: relative;
   top: 50px;
   margin-left: 40px;
+
+
 }
 
 section ul li {
   margin-left: 10px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   letter-spacing: 1.2px;
+
+  @media screen and (max-width: 768px) {
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+
+  }
 }
 
 .nav {
   height: 300px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .CharaButton {
@@ -104,10 +141,15 @@ section ul li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 img[src="imageChara.png"] {
-  width: 70%;
+  width: 100%;
   height: auto;
   border-radius: 10px;
 }
@@ -117,3 +159,6 @@ img[src="imageChara.png"] {
   font-weight: bold;
   color: #333;
 }
+  @media screen and (max-width: 768px) {
+    .nav {display: none;}
+  }
