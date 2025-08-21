@@ -71,17 +71,7 @@ section>p {
   position: relative;
   top: -40px;
 
-  @media screen and (max-width: 768px) {
-    position: relative;
-    top: -220px;
-    left: -20px;
-    height: auto;
-    align-self: start;
-    margin-bottom: 20px;
-    font-size: 20px;
-    text-align: left;
 
-  }
 }
 
 section div p {
@@ -109,18 +99,11 @@ section ul li {
   margin-left: 10px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   letter-spacing: 1.2px;
-
-  @media screen and (max-width: 768px) {
-    text-align: left;
-    margin-left: 0;
-    margin-bottom: 10px;
-    font-size: 18px;
-
-  }
 }
 
 .nav {
   height: 300px;
+
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -159,6 +142,45 @@ img[src="imageChara.png"] {
   font-weight: bold;
   color: #333;
 }
-  @media screen and (max-width: 768px) {
-    .nav {display: none;}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
   }
+
+  section>p {
+    position: relative;
+    top: -220px;
+    left: 20px;
+    height: auto;
+    align-self: end;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .CharaButton {
+    width: 120px;
+    height: 120px;
+  }
+img[src="imageChara.png"] {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+  .nav {
+    transform: translateX(600px);
+  }
+
+  .CharaButton span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  section {
+    height: 400px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
