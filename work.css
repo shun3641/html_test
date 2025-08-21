@@ -147,16 +147,17 @@ img[src="imageChara.png"] {
   .nav {
     display: none;
   }
-
-  section>p {
+  section {
     position: relative;
-    top: -220px;
-    left: 20px;
-    height: auto;
-    align-self: end;
+  }
+  section>p {
+    writing-mode: vertical-lr;
+    position: absolute;
+    top: 150px;
+    left: -20px;
+    align-self: start;
     margin-bottom: 20px;
     font-size: 20px;
-    text-align: left;
   }
 
   .CharaButton {
@@ -164,7 +165,7 @@ img[src="imageChara.png"] {
     height: 120px;
   }
 img[src="imageChara.png"] {
-  width: 80%;
+  width: 90%;
   height: auto;
   border-radius: 10px;
 }
@@ -182,5 +183,9 @@ img[src="imageChara.png"] {
     height: 400px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+  }
+  .myImage {
+    width: 100%;
+    height: auto;
   }
 }
