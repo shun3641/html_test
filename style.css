@@ -131,24 +131,13 @@ h3 {
 h2 {
   margin-top: 0;
   padding-top: 30px;
-  padding-left: 30px;
+  padding-left: 40px;
   font-family: "Bungee", sans-serif;
   font-weight: 200;
   font-size: 40px;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
   padding-bottom: 10px;
-}
-
-#leftArm {
-  display: inline-block;
-  position: relative;
-  bottom: 5px;
-  margin-right: 2px;
-  width: 40px;
-  height: 40px;
-  background-color: black;
-  clip-path: polygon(0% 0%, 30% 0%, 30% 70%, 100% 70%, 100% 100%, 0% 100%);
 }
 
 .mainWrapper {
@@ -177,7 +166,7 @@ main {
 }
 
 .worksText {
-  font-family: "HGP創英角ﾎﾟｯﾌﾟ体";
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
   font-weight: 800;
   font-size: 18px;
   padding-left: 10px;
@@ -211,8 +200,8 @@ img[src="amuse.png"] {
 
 .workname {
   padding-left: 10px;
-  font-weight: 500;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+  font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, sans-serif;;
   padding-top: 15px;
   padding-bottom: 15px;
   margin: 0;
