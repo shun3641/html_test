@@ -10,22 +10,14 @@ header {
   overflow: hidden;
 }
 
-.topGra {
-  background-image: url("portpholioTopimage.png");
-  padding: 25px;
-  filter: brightness(1) contrast(1.5);
-}
-
 .topImage {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-size: 200px 110px;
-  background-repeat: no-repeat;
 }
 
 .topImage img {
-  height: 380px;
+  width: 45%;
 }
 
 @media screen and (max-width: 767px) {
@@ -50,8 +42,8 @@ header {
   color: rgb(118, 168, 218);
   -webkit-text-stroke: 0.8px rgb(255, 255, 255);
   font-weight: 600;
-  font-size: 5rem;
-  margin-left: 50px;
+  font-size: 5.2rem;
+  padding-left: 40px;
 }
 
 .contents_wrapper {
@@ -234,9 +226,9 @@ img[src="amuse.png"] {
   }
 
   .topImage .title {
-    font-size: 2.5rem;
-    margin-left: 20px;
-    margin-top: 10px;
+    font-size: 3rem;
+    padding-left: 20px;
+    margin-top: 15px;
   }
 
   .work {
@@ -248,13 +240,29 @@ img[src="amuse.png"] {
 .profileFlex {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
 }
 
 .profileContent {
   max-width: 600px;
   margin-top: 40px;
   line-height: 1.6;
-  padding: 10px;
+  padding: 0px 10px;
   font-size: 18px;
 }
+
+ @media (orientation: landscape) and (max-height: 450px) {
+  .topImage {
+    flex-direction: row;
+    align-items: center;
+  }
+  .title {
+    font-size: 3.8rem;
+    padding-left: 20px;
+  }
+
+  .topImage img {
+    width: 50%;
+    height: auto;
+  }
+ }
