@@ -210,8 +210,8 @@ img[src="amuse.png"] {
   margin-left: 30px;
 }
 .myFace img {
-  width: 350px;
-  height: 400px;
+  width: 250px;
+  height: 260px;
   border-radius: 50%;
 }
 
@@ -243,4 +243,18 @@ img[src="amuse.png"] {
     width: 100%;
     margin-bottom: 10px;
   }
+}
+
+.profileFlex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.profileContent {
+  max-width: 600px;
+  margin-top: 40px;
+  line-height: 1.6;
+  padding: 10px;
+  font-size: 18px;
 }
