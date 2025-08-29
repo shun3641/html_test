@@ -199,7 +199,14 @@ h2 {
   font-family: "Kosugi Maru", sans-serif;
   font-weight: 100;
   font-style: normal;
+  font-size: 2.5rem;
   padding: 25px 0 25px 60px;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 1.6rem;
+  }
 }
 
 h3 {
@@ -235,11 +242,11 @@ p {
   margin-top: 0;
   padding-top: 0;
 }
+
 .appeal-wrapper {
   width: 83%;
   margin: 20px auto;
-  border: 3px solid black;
-  
+  border: 5px solid black;
 }
 
 .site-appeal {
@@ -253,10 +260,10 @@ p {
   display: block;
   position: relative;
   top: -10px;
-  left: -1%;
+  left: -15px;
   height: 50px;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 15px;
   background-color: black;
   border-radius: 10px;
 }
