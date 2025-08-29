@@ -205,8 +205,8 @@ h2 {
 h3 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 24px;
-  margin-left: 20px;
   width: 340px;
+  margin-bottom: 0;
 }
 
 h3::after {
@@ -229,4 +229,34 @@ h3::after {
 
 .work_img {
   text-align: center;
+}
+
+p {
+  margin-top: 0;
+  padding-top: 0;
+}
+.appeal-wrapper {
+  width: 83%;
+  margin: 20px auto;
+  border: 3px solid black;
+  
+}
+
+.site-appeal {
+  width: 85%;
+  margin: 40px auto;
+  border-bottom: 1px solid black;
+}
+
+.appeal-wrapper::before {
+  content: '';
+  display: block;
+  position: relative;
+  top: -10px;
+  left: -1%;
+  height: 50px;
+  width: 100%;
+  padding: 0 10px;
+  background-color: black;
+  border-radius: 10px;
 }
