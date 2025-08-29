@@ -147,9 +147,11 @@ img[src="imageChara.png"] {
   .nav {
     display: none;
   }
+
   section {
     position: relative;
   }
+
   section>p {
     writing-mode: vertical-lr;
     position: absolute;
@@ -164,11 +166,13 @@ img[src="imageChara.png"] {
     width: 120px;
     height: 120px;
   }
-img[src="imageChara.png"] {
-  width: 90%;
-  height: auto;
-  border-radius: 10px;
-}
+
+  img[src="imageChara.png"] {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+  }
+
   .nav {
     transform: translateX(600px);
   }
@@ -184,8 +188,45 @@ img[src="imageChara.png"] {
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
+
   .myImage {
     width: 100%;
     height: auto;
   }
+}
+
+h2 {
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  padding: 25px 0 25px 60px;
+}
+
+h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24px;
+  margin-left: 20px;
+  width: 340px;
+}
+
+h3::after {
+  content: '';
+  display: block;
+  position: relative;
+  bottom: 5px;
+  left: -5px;
+  width: 180px;
+  height: 32px;
+  background-color: black;
+  clip-path: polygon(0 30%, 60% 30%, 90% 0, 100% 10%, 60% 60%, 0 60%);
+}
+
+.work_img img {
+  width: 85%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.work_img {
+  text-align: center;
 }
