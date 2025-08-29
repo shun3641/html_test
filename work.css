@@ -27,174 +27,6 @@ img[src="workbg.jpg"] {
   padding: 40px 60px;
 }
 
-a[href="index.html"] {
-  font-size: 30px;
-  margin-left: 50px;
-}
-
-.myImage {
-  max-width: 700px;
-
-  @media screen and (max-width: 768px) {
-    width: 300px;
-
-  }
-}
-
-section {
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  background-image: url("トップBg2.jpg");
-  background-size: 100% 100%;
-
-  @media screen and (max-width: 768px) {
-    flex-direction: column-reverse;
-    align-items: center;
-    padding: 20px;
-  }
-}
-
-section p {
-  writing-mode: vertical-lr;
-  background-color: rgb(36, 36, 36);
-  color: white;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 24px;
-  letter-spacing: 1.2px;
-}
-
-section>p {
-  height: 11em;
-  text-align: center;
-  align-self: center;
-  position: relative;
-  top: -40px;
-
-
-}
-
-section div p {
-  writing-mode: horizontal-tb;
-  width: 9em;
-  text-align: center;
-  position: relative;
-  left: 20px;
-}
-
-section ul {
-  list-style-type: none;
-  padding: 0;
-  writing-mode: vertical-rl;
-  font-size: 20px;
-  align-self: flex-start;
-  position: relative;
-  top: 50px;
-  margin-left: 40px;
-
-
-}
-
-section ul li {
-  margin-left: 10px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  letter-spacing: 1.2px;
-}
-
-.nav {
-  height: 300px;
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-}
-
-.CharaButton {
-  width: 200px;
-  height: 200px;
-  background-color: white;
-  display: flex;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  border: 5px solid #dc9983;
-  outline: 6px solid rgb(83, 83, 209);
-  outline-offset: 1px;
-  border-radius: 50%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  @media screen and (max-width: 768px) {
-    width: 120px;
-    height: 120px;
-  }
-}
-
-img[src="imageChara.png"] {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.CharaButton span {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-}
-
-@media screen and (max-width: 768px) {
-  .nav {
-    display: none;
-  }
-
-  section {
-    position: relative;
-  }
-
-  section>p {
-    writing-mode: vertical-lr;
-    position: absolute;
-    top: 150px;
-    left: -20px;
-    align-self: start;
-    margin-bottom: 20px;
-    font-size: 20px;
-  }
-
-  .CharaButton {
-    width: 120px;
-    height: 120px;
-  }
-
-  img[src="imageChara.png"] {
-    width: 90%;
-    height: auto;
-    border-radius: 10px;
-  }
-
-  .nav {
-    transform: translateX(600px);
-  }
-
-  .CharaButton span {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-  }
-
-  section {
-    height: 400px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
-
-  .myImage {
-    width: 100%;
-    height: auto;
-  }
-}
-
 h2 {
   font-family: "Kosugi Maru", sans-serif;
   font-weight: 100;
@@ -226,6 +58,29 @@ h3::after {
   height: 32px;
   background-color: black;
   clip-path: polygon(0 30%, 60% 30%, 90% 0, 100% 10%, 60% 60%, 0 60%);
+}
+.site-url {
+  color: blue;
+  font-size: 28px;
+  align-self: flex-end;
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    align-self: flex-start;
+    
+  }
+}
+
+.work_name {
+  display: flex;
+  gap: 20px;
+  padding-left: 60px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+    font-size: 1.2rem;
+    
+  }
 }
 
 .work_img img {
@@ -273,4 +128,38 @@ p {
   padding: 0 10px;
   background-color: black;
   border-radius: 10px;
+}
+
+.fullSite {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.fullSite img {
+  width: 70%;
+  height: auto;
+  border-radius: 10px;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+
+a[href="index.html"] {
+  display: block;
+  font-size: 30px;
+  width: 70%;
+  margin: 20px auto;
+}
+
+a[href="index.html"] > span{
+  display: inline;
+  text-align: left;
+  font-size: 30px;
+  margin: 20px auto;
+  padding: 5px 10px;
+  background-color: blue;
+  color: white;
 }
