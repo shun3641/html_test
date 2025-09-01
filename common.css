@@ -86,7 +86,7 @@ a {
 
 .navBtnTxt::after {
   content: "メニュー";
-  font-size: 16px;
+  font-size: 17px;
   color: white;
   font-weight: bold;
 
