@@ -151,6 +151,16 @@ p {
     border-radius: 10px;
   }
 }
+.backButton {
+  display: block;
+  width: 70%;
+  margin: 15px auto;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
 
 a[href="index.html"] span {
   display: inline-block;
@@ -158,10 +168,9 @@ a[href="index.html"] span {
   width: 100px;
   height: 30px;
   border-radius: 5px;
-  margin-left: 65px;
-  margin-bottom: 20px;
   font-size: 20px;
   padding: 10px;
   color: white;
   background-color: blue;
+   
 }
