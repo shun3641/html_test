@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #C1CDF5;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.topImage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #C1CDF5;
+}
+
+.topImage img {
+  width: 45%;
+}
+
+@media screen and (max-width: 767px) {
+  .topimage {
+    width: 150px;
+    height: 80px;
+    background-size: 150px 80px;
+  }
+
+}
+
+.name {
+  font-weight: 800;
+  font-size: 26px;
+  margin-left: 20px;
+  margin-top: 0;
+  padding-top: 15px;
+}
+
+.title {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(118, 168, 218);
+  -webkit-text-stroke: 0.8px rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 5.2rem;
+  padding-left: 40px;
+  background-color: inherit;
+}
+
+.contents_wrapper {
+  padding: 10px 60px;
+}
+
+.gaiyou {
+  color: red;
+}
+
+
+.used {
+  color: black;
+  font-weight: nomal;
+  font-size: 16px;
+}
+
+.jump_bottun {
+  position: absolute;
+  margin-top: 15px;
+  right: 20px;
+  width: 150px;
+  height: 150px;
+  font-size: 18px;
+  padding-bottom: 10px;
+  background-color: rgb(223, 40, 40);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jump_bottun a {
+  color: inherit;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+.jump_text {
+  position: absolute;
+  bottom: 10px;
+}
+
+.word {
+  font-weight: 500;
+}
+
+.sun {
+  display: inline-block;
+  margin-left: 20px;
+  width: 100px;
+  height: 100px;
+  transform-origin: center;
+  animation: roling 15s linear infinite;
+}
+
+
+@keyframes roling {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h2 {
+  margin-top: 0;
+  padding-top: 30px;
+  padding-left: 40px;
+  font-family: "Bungee", sans-serif;
+  font-weight: 200;
+  font-size: 40px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  padding-bottom: 10px;
+}
+
+.mainWrapper {
+  margin-left: 20px;
+  border-left: 3px solid black;
+}
+
+main {
+  padding-top: 30px;
+  background-color: #C1CDF5;
+}
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.work {
+  border: 2px solid #5CA4F5;
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  padding-bottom: 3px;
+}
+
+.worksText {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  padding-left: 10px;
+  color: white;
+}
+
+.category {
+  font-size: 20px;
+  padding-left: 10px;
+  color: white;
+  font-weight: 600;
+  font-family: "HGP創英角ﾎﾟｯﾌﾟ体";
+  border-bottom: 2px solid white;
+  padding-bottom: 8px;
+}
+
+.work_image {
+  text-align: center;
+}
+
+.work_image img {
+  width: 90%;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: 100% 100%;
+}
+
+img[src="amuse.png"] {
+  opacity: 0.95;
+}
+
+.workname {
+  padding-left: 10px;
+  font-weight: 600;
+  font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, sans-serif;;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0;
+}
+.myFace {
+  margin-left: 30px;
+}
+.myFace img {
+  width: 250px;
+  height: 260px;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  .topImage {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .topImage img {
+    width: 100%;
+    height: auto;
+  }
+
+  .topImage .title {
+    font-size: 3rem;
+    padding-left: 20px;
+    margin-top: 15px;
+  }
+
+  .work {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.profileFlex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.profileContent {
+  max-width: 600px;
+  margin-top: 40px;
+  line-height: 1.6;
+  padding: 0px 10px;
+  font-size: 18px;
+}
+
+ @media (orientation: landscape) and (max-height: 450px) {
+  .topImage {
+    flex-direction: row;
+    align-items: center;
+  }
+  .title {
+    font-size: 3.8rem;
+    padding-left: 20px;
+  }
+
+  .topImage img {
+    width: 50%;
+    height: auto;
+  }
+ }

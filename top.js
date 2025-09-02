@@ -10,11 +10,8 @@
 
     $(".navItem").on('click', function () {
       $(".navBtn").toggleClass("active");
-      $(".navSp").toggleClass("active")
-      setTimeout(function () {
-        $(".navSpBtn").toggleClass("active");
-      }, 800);
-
+      $(".navSp").toggleClass("active");
+      $(".navSpBtn").toggleClass("active");
         $(".navBtnTxt").toggleClass("active");
       });
   })

@@ -59,14 +59,16 @@ h3::after {
   background-color: black;
   clip-path: polygon(0 30%, 60% 30%, 90% 0, 100% 10%, 60% 60%, 0 60%);
 }
+
 .site-url {
   color: blue;
   font-size: 28px;
   align-self: flex-end;
+
   @media screen and (max-width: 768px) {
     font-size: 18px;
     align-self: flex-start;
-    
+
   }
 }
 
@@ -74,12 +76,13 @@ h3::after {
   display: flex;
   gap: 20px;
   padding-left: 60px;
+
   @media screen and (max-width: 768px) {
     flex-direction: column;
     gap: 10px;
     padding-left: 20px;
     font-size: 1.2rem;
-    
+
   }
 }
 
@@ -92,6 +95,7 @@ h3::after {
 .work_img {
   text-align: center;
 }
+
 @media screen and (max-width: 768px) {
   .work_img img {
     width: 95%;
@@ -140,6 +144,7 @@ p {
   width: 70%;
   height: auto;
   border-radius: 10px;
+
   @media screen and (max-width: 768px) {
     width: 90%;
     height: auto;
@@ -147,19 +152,16 @@ p {
   }
 }
 
-a[href="index.html"] {
-  display: block;
-  font-size: 30px;
-  width: 70%;
-  margin: 20px auto;
-}
-
-a[href="index.html"] > span{
-  display: inline;
-  text-align: left;
-  font-size: 30px;
-  margin: 20px auto;
-  padding: 5px 10px;
-  background-color: blue;
+a[href="index.html"] span {
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  margin-left: 65px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding: 10px;
   color: white;
+  background-color: blue;
 }
