@@ -1,4 +1,5 @@
 body {
+  max-width: 100%;
   margin: 0;
 }
 
@@ -20,9 +21,10 @@ header {
 
 .topImage img {
   width: 45%;
+
   @media screen and (max-width: 767px) {
     width: 100%;
-    
+
   }
 }
 
@@ -34,6 +36,7 @@ header {
   }
 
 }
+
 #cover {
   position: absolute;
   top: 20px;
@@ -43,6 +46,7 @@ header {
   background: rgba(128, 0, 128, 0.6);
   pointer-events: none;
 }
+
 .name {
   font-weight: 800;
   font-size: 26px;
@@ -61,6 +65,7 @@ header {
   line-height: 0.9;
   text-align: center;
 }
+
 .head {
   font-size: 1.1em;
   color: purple;
@@ -69,7 +74,7 @@ header {
 .mLeft {
   display: inline-block;
   position: relative;
-    left: 50px;
+  left: 50px;
 }
 
 .portfolio {
@@ -82,10 +87,11 @@ header {
   color: white;
   width: 260px;
   position: relative;
-    left: 70px;
+  left: 70px;
   background-color: rgb(64, 64, 64);
+
   @media screen and (max-width: 767px) {
-    left: 30px;    
+    left: 30px;
   }
 }
 
@@ -143,15 +149,6 @@ h3 {
   font-weight: 500;
 }
 
-.sun {
-  display: inline-block;
-  margin-left: 20px;
-  width: 100px;
-  height: 100px;
-  transform-origin: center;
-  animation: roling 15s linear infinite;
-}
-
 
 @keyframes roling {
   from {
@@ -164,15 +161,13 @@ h3 {
 }
 
 h2 {
+  padding: 30px;
   margin-top: 0;
-  padding-top: 30px;
-  padding-left: 40px;
   font-family: "Bungee", sans-serif;
   font-weight: 200;
   font-size: 40px;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
-  padding-bottom: 10px;
 }
 
 .mainWrapper {
@@ -186,10 +181,10 @@ main {
 }
 
 .works {
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px;
 }
 
 .work {
@@ -236,18 +231,28 @@ img[src="amuse.png"] {
 .workname {
   padding-left: 10px;
   font-weight: 600;
-  font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, sans-serif;;
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, sans-serif;
+  ;
   padding-top: 15px;
   padding-bottom: 15px;
   margin: 0;
 }
+
 .myFace {
+  display: inline-block;
   margin-left: 30px;
+
+  @media screen and (max-width: 767px) {
+    margin-left: 0;
+
+  }
 }
+
 .myFace img {
-  width: 240px;
-  height: 320px;
-  clip-path: ellipse(50% 40% at 50% 50%);
+  width: 210px;
+  height: 280px;
+  /* clip-path: ellipse(50% 40% at 50% 50%); */
+  clip-path: circle();
   border-radius: 50%;
 }
 
@@ -279,40 +284,55 @@ img[src="amuse.png"] {
 .profileFlex {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-}
 
-.profileContent {
-  max-width: 600px;
-  line-height: 1.6;
-  margin-top: 40px;
-  padding: 0px 10px;
-  font-size: 18px;
   @media screen and (max-width: 767px) {
-   margin-top: 0;    
+    justify-content: center;
   }
 }
 
- @media (orientation: landscape) and (max-height: 450px) {
+.profileContent {
+  display: inline-block;
+  vertical-align: top;
+  width: 600px;
+  line-height: 1.6;
+  margin-top: 40px;
+  padding: 0;
+  font-size: 16px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 0;
+    margin-left: 0;
+    width: calc(100% - 40px);
+  }
+}
+
+.profileContent p:first-child {
+  margin: 0;
+  padding: 0;
+}
+
+@media (orientation: landscape) and (max-height: 450px) {
   .topImage {
     flex-direction: row;
     align-items: center;
   }
+
   .title {
     font-size: 3.8rem;
-    padding-left: 20px;
   }
 
   .topImage img {
     width: 50%;
     height: auto;
   }
- }
+}
 
- .skill {
+.skill {
+  margin-top: 20px;
+  /* display: inline-block;
   font-weight: bold;
   border-bottom: 2px solid black;
   padding-bottom: 2px;
-  font-size: 18px;
-  color: #2a2a2a;
- }
+  font-size: 16px;
+  color: #2a2a2a; */
+}
