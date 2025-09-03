@@ -124,6 +124,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  margin-left: 0;
 }
 
 .work {
