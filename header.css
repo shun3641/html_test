@@ -1,3 +1,7 @@
+header {
+  padding-bottom: 20px;
+}
+
 html {
   --primary-gray-gradation: conic-gradient(from 240deg at 60% 60%, #c1cdf5 0deg, #c8d2f2 60deg, #c1cdf5 120deg, #c8d2f2 280deg);
   --primary-white2: #F8F7F7;
