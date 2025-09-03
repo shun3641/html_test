@@ -284,7 +284,7 @@ img[src="amuse.png"] {
 .profileFlex {
   display: flex;
   flex-wrap: wrap;
-
+  gap: 30px;
   @media screen and (max-width: 767px) {
     justify-content: center;
   }
@@ -295,7 +295,7 @@ img[src="amuse.png"] {
   vertical-align: top;
   width: 600px;
   line-height: 1.6;
-  margin-top: 40px;
+  margin-top: 50px;
   padding: 0;
   font-size: 16px;
 
