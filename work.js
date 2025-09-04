@@ -1,6 +1,6 @@
+// MDNの下記urlから参照した
+//developer.mozilla.org/ja/docs/Web/API/Location/search
 const queryString = window.location.search; 
-
-// さらに解釈する
 const params = new URLSearchParams(queryString);
 const id = params.get("id"); 
 const number = params.get("number");
