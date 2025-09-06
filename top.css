@@ -3,8 +3,9 @@ body {
   margin: 0;
 }
 
-header {
+#header {
   background-color: #C1CDF5;
+  padding-bottom: 45px;
 }
 
 .topImage {
@@ -12,12 +13,14 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #C1CDF5;
+  /* 白い余白が描画されるバグが生じたため↓ */
+  margin-top: -10px;
 }
-
 
 .topImage img {
   width: 45%;
   margin-bottom: 20px;
+
   @media screen and (max-width: 767px) {
     width: 100%;
 
@@ -211,7 +214,7 @@ img[src="amuse.png"] {
   .topImage .title {
     font-size: 3rem;
     padding-left: 20px;
-    margin-top: 15px;
+    margin-top: 0;
   }
 
   .work {
@@ -224,6 +227,7 @@ img[src="amuse.png"] {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+
   @media screen and (max-width: 767px) {
     justify-content: center;
   }
@@ -270,6 +274,7 @@ img[src="amuse.png"] {
   margin-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 0;
+  font-size: 17px;
 }
 
 .skill span {

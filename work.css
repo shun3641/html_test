@@ -139,27 +139,35 @@ main {
   background-color: black;
   border-radius: 10px;
 }
-
-.fullSite {
-  margin-top: 30px;
-  width: 100%;
-  text-align: center;
+.fullSiteWrapper {
+  margin: 0 auto;
+  width: 90%;
+  padding-left: 15px;
 }
 
-.fullSite img {
-  width: 70%;
+.fullSite {
+
+} 
+
+.fullSiteImage {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 20px;
+  vertical-align: top;
+  width: 30%;
   height: auto;
   border-radius: 10px;
-
-  @media screen and (max-width: 768px) {
+  @media  screen and (max-width: 768px) {
     width: 90%;
     height: auto;
     border-radius: 10px;
+    
   }
 }
+
 .backButton {
   display: block;
-  width: 70%;
+  width: 90%;
   margin: 15px auto;
   @media screen and (max-width: 768px) {
     width: 90%;
@@ -175,7 +183,8 @@ a[href="index.html"] span {
   height: 30px;
   border-radius: 5px;
   font-size: 20px;
-  padding: 10px;
+  padding: 15px;
+  margin-top: 20px;
   color: white;
   background-color: blue;
    

@@ -1,3 +1,5 @@
+// メニュークリックに応じてactive付与により
+// cssでアニメーションを起こした。
 'use strict';
 {
   $(function () {
