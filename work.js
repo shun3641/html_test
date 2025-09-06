@@ -26,8 +26,14 @@ const amuse = {
     {
       target: "10~50代の家族連れ、カップル。思い出作りをしたい方々",
       siteImage: "爽快さが伝わるように鮮やかな写真と青を基調とした配色を心掛けました。",
-      designProcess: "どのページにもメインコンテンツのヘッダーを追従させることによってサイト利用者の混乱を防ぐようにしました。<br>あとで誰でも編集できるようにカスタムHTMLを一切使わずに作成しました。<br>また、豪快にアニメーションをして迫力を上げました。<br>テンポよく読めるように情報は最小限に抑えました。",
-      heardThing: "デフォルトでサイト全体のカラムが2になってたのを1に直したこと。<br>おすすめのwidthの調整。<br>画像の迫力を維持するための調整。<br>CSSの上書き処理。",
+      designProcess: 
+      "カスタムHTMLを一切使わないことで誰でも編集できるサイトを心掛けました。" +
+      "<br>使用者の混乱を防ぐため、ヘッダーは常時追従するように設計しました。",
+      heardThing: "画像のサイズ調整に苦戦しました。" + 
+      "<br>上手くデフォルトCSSを上書きすることで何とか違和感なく持っていきました。" +
+      "<br>wordpressのjqueryの文法に癖があるため、そこを動かすのに苦戦してました。",
+      usedTool: "wordpress(lightning)/ css(カスタムcssプラグイン使用)/ jquery(カスタムJSプラグイン使用)/ illustrator",
+      period: "1か月"
     }
 
 
@@ -38,6 +44,20 @@ const desertRand = {
   Image: "ipad-desertRand.png",
   url: "https://shungolearning2.web.fc2.com/",
   fullSiteUrl: ["desertRand/desertRand_top.png"],
+    contents: 
+    {
+      target: "10~50代の家族連れ、カップル。思い出作りをしたい方々",
+      siteImage: "爽快さが伝わるように鮮やかな写真と青を基調とした配色を心掛けました。",
+      designProcess: 
+      "カスタムHTMLを一切使わないことで誰でも編集できるサイトを心掛けました。" +
+      "<br>使用者の混乱を防ぐため、ヘッダーは常時追従するように設計しました。",
+      heardThing: "画像のサイズ調整に苦戦しました。" + 
+      "<br>上手くデフォルトCSSを上書きすることで何とか違和感なく持っていきました。" +
+      "<br>wordpressのjqueryの文法に癖があるため、そこを動かすのに苦戦してました。",
+      usedTool: "wordpress(lightning)/ css(カスタムcssプラグイン使用)/ jquery(カスタムJSプラグイン使用)/ illustrator",
+      period: "1か月"
+    }
+
 }
 
 const activeFit = {
@@ -55,6 +75,21 @@ const activeFit = {
     "ActiveFit/ActiveFit_page7.png",
     "ActiveFit/ActiveFit_page8.png",
   ],
+
+    contents: 
+    {
+      target: "10~50代の家族連れ、カップル。思い出作りをしたい方々",
+      siteImage: "爽快さが伝わるように鮮やかな写真と青を基調とした配色を心掛けました。",
+      designProcess: 
+      "カスタムHTMLを一切使わないことで誰でも編集できるサイトを心掛けました。" +
+      "<br>使用者の混乱を防ぐため、ヘッダーは常時追従するように設計しました。",
+      heardThing: "画像のサイズ調整に苦戦しました。" + 
+      "<br>上手くデフォルトCSSを上書きすることで何とか違和感なく持っていきました。" +
+      "<br>wordpressのjqueryの文法に癖があるため、そこを動かすのに苦戦してました。",
+      "usedTool": "wordpress(lightning)/ css(カスタムcssプラグイン使用)/ jquery(カスタムJSプラグイン使用)/ illustrator",
+      "period": "1か月"
+    }
+
 }
 const SiteInfo = {
   amuse: amuse,
@@ -67,8 +102,14 @@ $(".work_name").text(SiteInfo[id].title);
 $(".site-url").attr("href", SiteInfo[id].url);
 $(".site-url2").attr("href", SiteInfo[id].url);
 $(".urlText").text(SiteInfo[id].url);
+$("#target").html(SiteInfo[id].contents.target);
+$("#siteImage").html(SiteInfo[id].contents.siteImage);
+$("#designProcess").html(SiteInfo[id].contents.designProcess);
+$("#heardThing").html(SiteInfo[id].contents.heardThing);
+$("#usedTool").text(SiteInfo[id].contents["usedTool"]);
+$("#period").text(SiteInfo[id].contents.period);
 console.log(SiteInfo[id].fullSiteUrl);
-$("#topSite").attr("src", SiteInfo[id].fullSiteUrl[0]);
+
 SiteInfo[id].fullSiteUrl.forEach((Image) => {
   $("#fullSite").append($('<img class="fullSiteImage">').attr("src", Image));
   console.log(Image)

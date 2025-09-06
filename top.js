@@ -17,4 +17,11 @@
         $(".navBtnTxt").toggleClass("active");
       });
   })
+
+  //空きスペース対策.workの数が4の倍数以外なら非表示
+  console.log($('.work').length);
+  if($('.work').length %4 != 0) {
+    $('.whiteSpace').css('display', 'none');
+  }
+
 }

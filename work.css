@@ -126,7 +126,10 @@ main {
   margin: 40px auto;
   border-bottom: 1px solid black;
 }
-
+.site-appeal p {
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+}
 .appeal-wrapper::before {
   content: '';
   display: block;
