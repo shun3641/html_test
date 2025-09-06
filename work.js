@@ -32,7 +32,7 @@ const amuse = {
       heardThing: "画像のサイズ調整に苦戦しました。" + 
       "<br>上手くデフォルトCSSを上書きすることで何とか違和感なく持っていきました。" +
       "<br>wordpressのjqueryの文法に癖があるため、そこを動かすのに苦戦してました。",
-      usedTool: "wordpress(lightning)/ css(カスタムcssプラグイン使用)/ jquery(カスタムJSプラグイン使用)/ illustrator",
+      usedTool: "wordpress(lightning)/ css(カスタムcssプラグイン使用)/ jQuery(カスタムJSプラグイン使用)/ illustrator",
       period: "1か月"
     }
 
