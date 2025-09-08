@@ -7,6 +7,37 @@ const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
+const myPortfolio = {
+  title: "Amuse",
+  url: "",
+  Image: "ipad-myportfolio.png",
+  //検証画面でデバイスサイズの幅を1500×3452に設定したまま
+  // capture full Size Screenshotで撮影した画像を使用した
+  fullSiteUrl: [
+    "amuse/amuse_page1.png",
+    "amuse/amuse_page2.png",
+    "amuse/amuse_page3.png",
+    "amuse/amuse_page4.png",
+    "amuse/amuse_page5.png",
+    "amuse/amuse_page6.png",
+    "amuse/amuse_top.png",
+  ],
+  contents: 
+    {
+      target: "10~50代の家族連れ、カップル。思い出作りをしたい方々",
+      siteImage: "爽快さが伝わるように鮮やかな写真と青を基調とした配色を心掛けました。",
+      designProcess: 
+      "カスタムHTMLを一切使わないことで誰でも編集できるサイトを心掛けました。" +
+      "<br>使用者の混乱を防ぐため、ヘッダーは常時追従するように設計しました。",
+      heardThing: "画像のサイズ調整に苦戦しました。" + 
+      "<br>上手くデフォルトCSSを上書きすることで何とか違和感なく持っていきました。" +
+      "<br>wordpressのjqueryの文法に癖があるため、そこを動かすのに苦戦してました。",
+      usedTool: "wordpress(lightning)/ css(カスタムcssプラグイン使用)/ jQuery(カスタムJSプラグイン使用)/ illustrator",
+      period: "1か月"
+    }
+
+}
+
 const amuse = {
   title: "Amuse",
   url: "https://shungolearning2.fc2.page/",
@@ -95,6 +126,7 @@ const SiteInfo = {
   amuse: amuse,
   desertRand: desertRand,
   activeFit: activeFit,
+  myPortfolio: myPortfolio,
 }
 
 $("#work_img").attr("src", SiteInfo[id].Image);

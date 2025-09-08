@@ -1,18 +1,34 @@
+html {
+  --bg: #C1CDF5;
+}
+
 body {
   max-width: 100%;
   margin: 0;
 }
 
+.top {
+  width: 100%;
+  height: 120vh;
+  background-image: url("トップ.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media screen and (max-width: 767px) {
+    background-size: cover;
+    height: 30vh;
+  }
+}
+
 #header {
-  background-color: #C1CDF5;
-  padding-bottom: 45px;
+  background-color: var(--bg);
 }
 
 .topImage {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #C1CDF5;
+  background-color: var(--bg);
   /* 白い余白が描画されるバグが生じたため↓ */
   margin-top: -10px;
 }
@@ -67,7 +83,7 @@ body {
 
 .head {
   font-size: 1.1em;
-  color: purple;
+  color: #1785de;
 }
 
 .mLeft {
@@ -103,23 +119,22 @@ h3 {
 }
 
 h2 {
-  padding: 30px 0 10px 20px;
-  margin-top: 0;
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding-left: 40px;
   font-family: "Bungee", sans-serif;
   font-weight: 200;
   font-size: 40px;
-  border-top: 3px solid #2a2a2a;
-  border-bottom: 3px solid #2a2a2a;
+  color: #0771d5;
+  border-bottom: 3px solid #0771d5;
 }
 
 .mainWrapper {
-  margin-left: 30px;
-  border-left: 3px solid #2a2a2a;
+  
 }
 
 main {
   padding-top: 0;
-  background-color: #C1CDF5;
 }
 
 .works {
@@ -133,7 +148,7 @@ main {
 
 .work {
   border: 2px solid #5CA4F5;
-  background-color: #2a2a2a;
+  background-color: #1785de;
   border-radius: 20px;
   color: white;
   padding-bottom: 3px;
@@ -230,23 +245,31 @@ img[src="amuse.png"] {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   margin-left: 20px;
+
   @media screen and (max-width: 767px) {
     display: none;
   }
 }
+
 .whiteSpace .mLeft {
   padding-left: 120px;
 }
+
 .whiteSpaceImage {
   vertical-align: bottom;
   width: 120px;
   height: 100px;
 }
 
+#profile {
+  
+}
+
 .profileFlex {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  background-color: #bfdff0;
   @media screen and (max-width: 767px) {
     justify-content: center;
   }

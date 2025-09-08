@@ -9,7 +9,7 @@ body {
 }
 
 html {
-  --primary-gray-gradation: conic-gradient(from 240deg at 60% 60%, #c1cdf5 0deg, #c8d2f2 60deg, #c1cdf5 120deg, #c8d2f2 280deg);
+  --primary-gray-gradation: conic-gradient(from 240deg at 60% 60%, #4dbaf3 0deg, #2997e6 60deg, #4dbaf3 120deg, #2997e6 280deg);
   --primary-white2: #F8F7F7;
   --primary-black: #1B1B1B;
 }
