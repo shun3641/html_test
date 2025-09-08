@@ -5,18 +5,24 @@ html {
 body {
   max-width: 100%;
   margin: 0;
+  background-image: url("texture.jpg");
+  background-color: #ffffff70;
+  background-position: 10% 10%;
 }
 
 .top {
   width: 100%;
   height: 120vh;
-  background-image: url("トップ.jpg");
+  background-image: url("トップ.png");
   background-repeat: no-repeat;
   background-size: 100%;
-
   @media screen and (max-width: 767px) {
     background-size: cover;
     height: 30vh;
+  }
+    @media screen and (max-width: 1024px) {
+    background-size: cover;
+    height: 50vh;
   }
 }
 
@@ -31,25 +37,6 @@ body {
   background-color: var(--bg);
   /* 白い余白が描画されるバグが生じたため↓ */
   margin-top: -10px;
-}
-
-.topImage img {
-  width: 45%;
-  margin-bottom: 20px;
-
-  @media screen and (max-width: 767px) {
-    width: 100%;
-
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .topimage {
-    width: 150px;
-    height: 80px;
-    background-size: 150px 80px;
-  }
-
 }
 
 #cover {
@@ -124,13 +111,13 @@ h2 {
   padding-left: 40px;
   font-family: "Bungee", sans-serif;
   font-weight: 200;
-  font-size: 40px;
+  font-size: 45px;
   color: #0771d5;
+  -webkit-text-stroke: 0.5px rgb(255, 255, 255);
   border-bottom: 3px solid #0771d5;
 }
 
 .mainWrapper {
-  
 }
 
 main {
@@ -269,7 +256,7 @@ img[src="amuse.png"] {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #bfdff0;
+  background-color: #8bc8e8;
   @media screen and (max-width: 767px) {
     justify-content: center;
   }
