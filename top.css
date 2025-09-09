@@ -50,7 +50,9 @@ body {
   font-size: 1.1em;
   color: #1785de;
 }
-
+.head.small {
+  font-size: 1.1em;
+}
 .mLeft {
   display: inline-block;
   position: relative;
@@ -193,6 +195,9 @@ img[src="amuse.png"] {
     display: none;
   }
 }
+.whiteSpace.small {
+  font-size: 60px;
+}
 
 .whiteSpace .mLeft {
   padding-left: 120px;
@@ -203,9 +208,9 @@ img[src="amuse.png"] {
   width: 120px;
   height: 100px;
 }
-
-#profile {
-  
+.whiteSpaceImage.small {
+  width: 90px;
+  height: 70px;
 }
 
 .profileFlex {
