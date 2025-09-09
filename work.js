@@ -25,7 +25,7 @@ const myPortfolio = {
       designProcess: 
       "必ず見てもらうサイトなのでデザインにこだわりました。クール系のwebサイトのデザインを参考に作っています。",
       hardThing: "Ipadにサイトを収納するとき、サイトのサイズをipadの画面サイズに合わせて切り抜く必要があったのでスクリーンショット時幅を合わせる必要があり、まあまあ悩みました。",
-      usedTool: "HTML/ CSS/ jQuery/ illustrator/ photoshop",
+      usedTool: "github pages VSCode/ HTML/ CSS/ jQuery/ illustrator/ photoshop",
       period: "2か月"
     }
 
