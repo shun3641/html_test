@@ -16,37 +16,15 @@ body {
   background-image: url("トップ.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  @media screen and (max-width: 767px) {
-    background-size: cover;
-    height: 30vh;
-  }
-    @media screen and (max-width: 1024px) {
-    background-size: cover;
-    height: 50vh;
+  @media screen and (max-width: 1200px) {
+    background-image: url("トップSP.png");
+    height: auto;
+    aspect-ratio: 4 /3;
   }
 }
 
 #header {
   background-color: var(--bg);
-}
-
-.topImage {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--bg);
-  /* 白い余白が描画されるバグが生じたため↓ */
-  margin-top: -10px;
-}
-
-#cover {
-  position: absolute;
-  top: 20px;
-  left: -20px;
-  height: 100%;
-  width: 100%;
-  background: rgba(128, 0, 128, 0.6);
-  pointer-events: none;
 }
 
 .name {
@@ -115,6 +93,9 @@ h2 {
   color: #0771d5;
   -webkit-text-stroke: 0.5px rgb(255, 255, 255);
   border-bottom: 3px solid #0771d5;
+  @media screen and (max-width: 767px) {
+    margin-top: 0;
+  }
 }
 
 .mainWrapper {
@@ -202,31 +183,6 @@ img[src="amuse.png"] {
   border-radius: 50%;
 }
 
-
-
-
-
-
-
-
-@media screen and (max-width: 767px) {
-  .topImage {
-    flex-direction: column;
-    align-items: start;
-  }
-
-  .topImage .title {
-    font-size: 3rem;
-    padding-left: 20px;
-    margin-top: 0;
-  }
-
-  .work {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-}
-
 .whiteSpace {
   font-size: 70px;
   font-family: Arial, Helvetica, sans-serif;
@@ -282,22 +238,6 @@ img[src="amuse.png"] {
 .profileContent p:first-child {
   margin: 0;
   padding: 0;
-}
-
-@media (orientation: landscape) and (max-height: 450px) {
-  .topImage {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .title {
-    font-size: 3.8rem;
-  }
-
-  .topImage img {
-    width: 50%;
-    height: auto;
-  }
 }
 
 .skill {

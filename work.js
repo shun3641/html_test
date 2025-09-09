@@ -55,11 +55,11 @@ const amuse = {
       siteImage: "爽快さが伝わるように鮮やかな写真と青を基調とした配色を心掛けました。",
       designProcess: 
       "カスタムHTMLを一切使わないことで誰でも編集できるサイトを心掛けました。" +
-      "<br>使用者の混乱を防ぐため、ヘッダーは常時追従するように設計しました。",
+      "<br>使用者の混乱を防ぐため、ヘッダーは常時追従するように設計しました。" ,
       hardThing: "画像のサイズ調整に苦戦しました。" + 
       "<br>上手くデフォルトCSSを上書きすることで何とか違和感なく持っていきました。" +
       "<br>wordpressのjqueryの文法に癖があるため、そこを動かすのに苦戦してました。",
-      usedTool: "wordpress(lightning)/ css(カスタムcssプラグイン使用)/ jQuery(カスタムJSプラグイン使用)/ illustrator",
+      usedTool: "FC2 wordpress(lightning)/ css(カスタムcssプラグイン使用)/ jQuery(カスタムJSプラグイン使用)/ illustrator",
       period: "1か月"
     }
 
@@ -73,16 +73,15 @@ const desertRand = {
   fullSiteUrl: ["desertRand/desertRand_top.png"],
     contents: 
     {
-      target: "スイーツが好きな10~20代の男女お腹いっぱい食べたい人向け",
+      target: "スイーツが好きな10~20代の男女。" + 
+      "<br>お腹いっぱい食べたい人向け。",
       siteImage: "JK風のポップな可愛らしいデザイン",
       designProcess: 
       "全体をサーモンピンクでまとめ、アクセントにオレンジを絡め、カラフルに設計しました。" +
-      "<br>利用する人が困らないように営業日、よくある質問など設置しました。" +
-      "葉っぱやスイカでサイトの個性を演出しました。",
+      "<br>利用する人が困らないように営業日、よくある質問など設置しました。",
       hardThing: "始めの1スクロールで画像拡大のところでかなり悩みました。" + 
-      "<br>トップページのイメージ画像のサイズ調整が初めてなのでかなり試行錯誤してた。" + 
       "<br>カーソルに追従するキラキラエフェクトはAIに書いてもらいました。",
-      usedTool: "HTML/ CSS/ javascript(jquery)/ photoshop",
+      usedTool: "VSCode FC2 FileZilla/HTML/ CSS/ javascript(jquery)/ photoshop",
       period: "3週間"
     }
 
@@ -106,16 +105,16 @@ const activeFit = {
 
     contents: 
     {
-      target: "10~50代の家族連れ、カップル。思い出作りをしたい方々",
-      siteImage: "爽快さが伝わるように鮮やかな写真と青を基調とした配色を心掛けました。",
+      target: "10~スポーツ好きな10~30代の男性。",
+      siteImage: "さわやかクールなイメージで、白と青のシンプルな配色にしました。",
       designProcess: 
-      "カスタムHTMLを一切使わないことで誰でも編集できるサイトを心掛けました。" +
-      "<br>使用者の混乱を防ぐため、ヘッダーは常時追従するように設計しました。",
-      hardThing: "画像のサイズ調整に苦戦しました。" + 
-      "<br>上手くデフォルトCSSを上書きすることで何とか違和感なく持っていきました。" +
-      "<br>wordpressのjqueryの文法に癖があるため、そこを動かすのに苦戦してました。",
-      "usedTool": "",
-      "period": ""
+      "ショッピングサイトのデザインということで、ページの数字をトリガーに画像と説明文をjavascriptを使って入れ替えるように設計しました。" +
+      "<br>詳細を見るの画面はクエリパラメータを使ってリンク先に情報を引き継がせることで、1ページでまとめるようにしました。" + 
+      "<br>走るひとのピクトグラムは雰囲気を出すためです。",
+      hardThing: "ページの遷移処理で配列を上書きして描画に気づくまで時間がかかりました。" + 
+      "<br>商品のデザインが普通に難しく、違和感なく仕上げるのに大変苦戦しました。",
+      "usedTool": "VSCode FC2 FileZilla/ HTML/ CSS/ javascript/illustrator",
+      "period": "1か月"
     }
 
 }
