@@ -20,16 +20,13 @@ const myPortfolio = {
   ],
   contents: 
     {
-      target: "10~50代の家族連れ、カップル。思い出作りをしたい方々",
-      siteImage: "爽快さが伝わるように鮮やかな写真と青を基調とした配色を心掛けました。",
+      target: "10~30歳前半の未経験男の採用担当の方々。",
+      siteImage: "クールなイメージの青を中心とした配色にしました。",
       designProcess: 
-      "カスタムHTMLを一切使わないことで誰でも編集できるサイトを心掛けました。" +
-      "<br>使用者の混乱を防ぐため、ヘッダーは常時追従するように設計しました。",
-      hardThing: "画像のサイズ調整に苦戦しました。" + 
-      "<br>上手くデフォルトCSSを上書きすることで何とか違和感なく持っていきました。" +
-      "<br>wordpressのjqueryの文法に癖があるため、そこを動かすのに苦戦してました。",
-      usedTool: "wordpress(lightning)/ css(カスタムcssプラグイン使用)/ jQuery(カスタムJSプラグイン使用)/ illustrator",
-      period: "1か月"
+      "必ず見てもらうサイトなのでデザインにこだわりました。クール系のwebサイトのデザインを参考に作っています。",
+      hardThing: "Ipadにサイトを収納するとき、サイトのサイズをipadの画面サイズに合わせて切り抜く必要があったのでスクリーンショット時幅を合わせる必要があり、まあまあ悩みました。",
+      usedTool: "HTML/ CSS/ jQuery/ illustrator/ photoshop",
+      period: "2か月"
     }
 
 }
