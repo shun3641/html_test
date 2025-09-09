@@ -235,6 +235,7 @@ img[src="amuse.png"] {
   font-size: 16px;
 
   @media screen and (max-width: 767px) {
+    padding-top: 0;
     margin-top: 0;
     margin-left: 0;
     width: calc(100% - 40px);
