@@ -8,14 +8,16 @@ body {
   background-image: url("texture.jpg");
   background-color: #ffffff70;
   background-position: 10% 10%;
+  box-sizing: border-box;
 }
 
 .top {
-  width: 100%;
-  height: 850px;
-  background-image: url("トップ.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
+    width: 40%;
+    margin-left: 50px;
+    height: 500px;
+    background-image: url("トップ.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
   @media screen and (max-width: 1200px) {
     background-image: url("トップSP.png");
     height: auto;
@@ -125,13 +127,13 @@ main {
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
   font-weight: 800;
   font-size: 18px;
-  padding: 10px 15px 5px 8px;
+  padding-left: 10px;
   color: white;
 }
 
 .category {
   font-size: 20px;
-  padding: 10px 15px 5px 8px;
+  padding-left: 10px;
   color: white;
   font-weight: 600;
   font-family: "HGP創英角ﾎﾟｯﾌﾟ体";
@@ -192,22 +194,32 @@ img[src="amuse.png"] {
     display: none;
   }
 }
+.category.spring {
+  font-size: 22px;
+  width: 70%;
+  background-color: black;
+  padding: 16px 28px;
+  margin-top: 20px;
+  border-bottom: none;
+}
+.category.webdesign {
+  font-size: 22px;
+  width: 70%;
+  background-color: darkcyan;
+  padding: 16px 28px;
+  margin-top: 20px;
+  border-bottom: none;
+}
 
 .work.video {
-  width: 50%;
-  margin-bottom: 40px;
-  @media screen and (max-width: 768px) {
+  width: 40%;
+  border: none;
+  height: 400px;
+  background-color: transparent;
+  @media screen and (max-width: 767px) {
     width: 100%;
     height: 300px;
-    margin-bottom: 60px;
   }
-}
-.srccode {
-  font-size: 18px;
-  overflow-wrap: anywhere;
-  padding: 8px 15px 5px 8px;
-  color: white;
-  font-weight: 500;
 }
 .whiteSpace.small {
   font-size: 60px;
@@ -236,12 +248,7 @@ img[src="amuse.png"] {
     justify-content: center;
   }
 }
-.Profile h2 {
-  margin-top: 60px;
-  @media screen and (max-width: 767px) {
-    margin-top: 60px;
-  }
-}
+
 .profileContent {
   display: inline-block;
   vertical-align: middle;
@@ -265,6 +272,10 @@ img[src="amuse.png"] {
   margin: 0;
   padding: 0;
 }
+.skillheading {
+  font-size: 30px;
+  padding-left: 10px;
+}
 
 .skill {
   margin-top: 20px;
@@ -276,4 +287,46 @@ img[src="amuse.png"] {
 .skill span {
   font-weight: 500;
   border-bottom: 2px solid #2a2a2a;
+}
+.skillTableSp {
+  display: none;
+  border: none;
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+}
+
+.skillTable {
+  border: none;
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+td{
+  padding: 20px;
+  font-size: 17px;
+  font-weight: bold;
+  border: none
+}
+
+tr {
+  border: none;
+  border-bottom: 2px solid #4390d1;
+}
+
+tbody {
+  border: none;
+}
+
+.reserved {
+  background-color: darkcyan;
+  padding: 20px 40px;
+  color: white;
+  margin-top: 10px;
 }

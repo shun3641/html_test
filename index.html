@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="田中駿吾のポートフォリオサイトを公開しました。">
-  <title>田中駿吾のポートフォリオだ</title>
+  <title>田中駿吾のポートフォリオ</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
@@ -24,8 +24,19 @@
     <div class="mainWrapper">
 
       <h2 id="works">WORKS</h2>
+      <p class="category spring">SpringBoot(java)</p>
+      <div class="works" style="margin-bottom: 30px;">
+        
+         <div class="work video">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/e6VBzIRTwbQ?si=uaJrBrUpISgR3Fca" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="work video">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tJMGVxaEprQ?si=BpRdAqpVIMlOrdHr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+       <p class="category webdesign">Webデザイン</p>
       <div class="works">
-        <div class="work">
+        <!-- <div class="work">
           <a href="work.html?id=myPortfolio">
             <p class="category">Webデザイン</p>
             <p class="worksText">TopPage</p>
@@ -34,23 +45,23 @@
             </div>
             <p class="workname">ポートフォリオHP/Self</p>
           </a>
-        </div>
+        </div> -->
 
         <div class="work">
           <!-- <a href="https://shungolearning2.fc2.page/"> -->
           <a href="work.html?id=amuse">
 
             <p class="category">Webデザイン</p>
-            <p class="worksText">アミューズ</p>
+            <p class="worksText">アミューズ(Wordpress)</p>
             <div class="work_image">
               <img src="ipad-amuse.png">
             </div>
             <p class="workname">遊園地HP/Self</p>
           </a>
         </div>
-        <div class="work">
+        <!-- <div class="work"> -->
           <!-- <a href="https://shungolearning2.web.fc2.com/"> -->
-          <a href="work.html?id=desertRand">
+          <!-- <a href="work.html?id=desertRand">
             <p class="category">Webデザイン</p>
             <p class="worksText">DesertRand</p>
             <div class="work_image">
@@ -58,7 +69,7 @@
             </div>
             <p class="workname">スイーツバイキングHP/Self</p>
           </a>
-        </div>
+        </div> -->
         <div class="work">
           <!-- <a href="https://shungolearning2.web.fc2.com/"> -->
           <a href="work.html?id=activeFit">
@@ -70,11 +81,7 @@
             <p class="workname">スポーツショップHP/Self</p>
           </a>
         </div>
-        <div class="work video">
-          <p class="category">java(spring boot)</p>
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GkVFenCdf-0?si=dTq1_iEy5H71IFeJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <p class="srccode"><a href="https://github.com/shun3641/springPortfolio.git">ソースコード:https://github.com/shun3641/springPortfolio.git</a></p>
-        </div>
+       
         <!-- 空きスペースを埋める、作品数が4の倍数なら表示 -->
         <p class="whiteSpace">
           <img class="whiteSpaceImage" src="whiteInosisi.png">
@@ -92,13 +99,46 @@
           <div class="profileContent">
             <p>1995年京都府生まれ いのしし年<br>
               趣味：ラノベやゲーム実況の視聴等インドア系の趣味<br>
-              経歴：大学卒業後、アルミサッシ会社で加工作業を行っていた。2年後退職し、就労移行を経てA型の利用を開始し、データ入力+出品作業に従事。2年後、B型事業所でwebデザインについて独学+講師の指導の元スキルアップをしていた。
+              経歴：大学卒業後、アルミサッシ会社で加工作業を行っていた。<br>
+              2年後退職し、データ入力+出品作業に従事。さらに2年後退職した後、web作成(ECサイト等)について独学し、スキルアップをしていた。
             </p>
-            <p class="skill"><span>SKILL:HTML, CSS, Javascript (jQuery)</span><br>
-              <span> WordPress(lightning PHPは未使用),Illustrator, Photoshop</span>
-              <div>TANAKASHUNGO ALL RIGHTS RESERVED</div>
-            </p>
+            <h2 style="" class="skillheading">Skill</h2>
+            <table class="skillTable" border="1">
+              <tbody>
+              <tr>
+                <td>springBoot(SpringSecurity搭載), postgresql</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>HTML, CSS, Javascript (+jQuery)</td>
+                <td></td>
+              </tr>
+               <tr>
+                <td>WordPress(lightningを使用, PHPは未使用)</td>
+                <td>Illustrator, Photoshop(基本操作程度)</td>
+              </tr>
+              
+              </tbody>
+            </table>
+            <table class="skillTableSp" border="1">
+              <tbody>
+              <tr>
+                <td>springBoot(SpringSecurity搭載),postgresql</td>
+              </tr>
+              <tr>
+                <td>HTML, CSS, Javascript (+jQuery)</td>
+              </tr>
+               <tr>
+                <td>WordPress(lightningを使用, PHPは未使用)</td>
+              </tr>
+              <tr>
+                <td>Illustrator, Photoshop(基本操作程度)</td>
+              </tr>
+              </tbody>
+            </table>
+            
           </div>
+         
         </div>
       </div>
     </div>
@@ -108,7 +148,7 @@
     </section>
   </main>
   <footer>
-    
+     <div class="reserved">TANAKASHUNGO ALL RIGHTS RESERVED</div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
